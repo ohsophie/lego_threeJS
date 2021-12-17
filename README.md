@@ -17,6 +17,10 @@ This is a repository for a small interactive web-browser LEGO project.
   - game.html
 4. Open index.html in your web-browser and enjoy!
 
+## Instruments
+The web-project's backend is developed on JavaScript with a ThreeJS framework.
+Frontend is pure HTML and CSS.
+
 ## Gameplay
 Use the buttons to create a new LEGO bricks and continue building your LEGO tower.
 Delete bricks by clicking a "cross" button.
