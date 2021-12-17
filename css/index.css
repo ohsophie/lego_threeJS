@@ -1,0 +1,71 @@
+.btn-new {
+	width: 175px;
+	height: 80px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #670D0D;
+	background-color: #670D0D;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: papyrus;
+    font-size: 25px;
+}
+
+.btn-new:hover {
+    box-shadow: 0 0 0 3px #fe4741, 0 0 0 5px #670D0D;
+}
+
+#but {
+	padding: 150px;
+}
+
+body {
+  background-image: url('../texture/lego.png');
+  background-size: cover;
+}
+
+p {
+	font-family: Arial;
+    font-size: 25px;
+	margin-left: 20px;
+}
+
+span {
+	margin-left: 20px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.dsongentom{
+  position: relative;
+  top: 50%;  
+  width: 30em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-family: papyrus;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);  
+}
+
+.desetungavon{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

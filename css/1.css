@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(#fe4741, white);
+}
+button {
+	background: #FFFFFF;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+
+img:hover {
+	opacity: 1;
+}
+
+img {
+	opacity: 0.7;
+}
+
+#green {
+	margin-left: 10px;
+}
+
+h2 {
+	margin-left: 30px;
+	font-family: papyrus;
+}
