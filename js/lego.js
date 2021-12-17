@@ -17,7 +17,6 @@ var LIME = 0x52FF00
 function green_lego(){
   var COLOR = GREEN;
   create_brick(COLOR);  
-  
   if (N > 5) {
 	CAMERA.position.y += 9;
 	CAMERA.position.z += 3;
