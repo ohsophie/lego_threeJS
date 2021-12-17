@@ -277,7 +277,6 @@ function create_brick(brick_color) {
 	BRICK.position.y = N*9
 	BRICK.position.z =3*N
 	
-	
 	N+=1
 	
 	BRICK.rotation.x = CONFIG.ROTATION.X;
