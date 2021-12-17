@@ -353,36 +353,6 @@ lightZController.onChange(() => {
   LIGHT.position.set(CONFIG.LIGHT.X, CONFIG.LIGHT.Y, CONFIG.LIGHT.Z);
 });
 
-const ROTATION = CONTROLS.addFolder('ROTATION');
-
-const rotationXController = ROTATION.add(
-CONFIG.ROTATION,
-'X',
-0,
-360 * Math.PI / 180);
-rotationXController.onChange(() => {
-  BRICK.rotation.set(CONFIG.ROTATION.X, CONFIG.ROTATION.Y, CONFIG.ROTATION.Z);
-});
-
-const rotationYController = ROTATION.add(
-CONFIG.ROTATION,
-'Y',
-0,
-360 * Math.PI / 180);
-rotationYController.onChange(() => {
-  BRICK.rotation.set(CONFIG.ROTATION.X, CONFIG.ROTATION.Y, CONFIG.ROTATION.Z);
-});
-
-const rotationZController = ROTATION.add(
-CONFIG.ROTATION,
-'Z',
-0,
-360 * Math.PI / 180);
-rotationZController.onChange(() => {
- BRICK.rotation.set(CONFIG.ROTATION.X, CONFIG.ROTATION.Y, CONFIG.ROTATION.Z);
-});
-
-
 const lightHelpController = LIGHTS.add(CONFIG.LIGHT, 'HELP');
 lightHelpController.onChange(() => {
   if (CONFIG.LIGHT.HELP) {
