@@ -27,6 +27,7 @@ Use the buttons to create a new LEGO bricks and continue building your LEGO towe
 Delete bricks by clicking a "cross" button.
 
 ## Contact information
-This project is created as part of the course "computer graphics basics" in KPI TUKE. Contact author at sofiaodiyak@gmail.com 
+This project is created as part of the course "Computer graphics basics" in KPI TUKE.  
+You can contact author at sofiaodiyak@gmail.com 
 
 2021
