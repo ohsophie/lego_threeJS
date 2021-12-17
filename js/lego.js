@@ -25,6 +25,8 @@ function green_lego(){
 	  CAMERA.position.z += 0;
   }
 }
+
+
 function yellow_lego(){
   var COLOR = YELLOW;
   create_brick(COLOR);
@@ -35,6 +37,8 @@ function yellow_lego(){
   CAMERA.position.z += 0;
   }
 }
+
+
 function red_lego(){
   var COLOR = RED;
   create_brick(COLOR);
@@ -45,6 +49,8 @@ function red_lego(){
   CAMERA.position.z += 0;
   }
 }
+
+
 function blue_lego(){
   var COLOR = BLUE;
   create_brick(COLOR);
@@ -55,6 +61,8 @@ function blue_lego(){
   CAMERA.position.z += 0;
   }
 }
+
+
 function cyan_lego(){
   var COLOR = CYAN;
   create_brick(COLOR);
@@ -65,6 +73,7 @@ function cyan_lego(){
   CAMERA.position.z += 0;
   }
 }
+
 
 function rose_lego(){
   var COLOR = ROSE;
@@ -77,6 +86,7 @@ function rose_lego(){
   }
 }
 
+
 function orange_lego(){
   var COLOR = ORANGE;
   create_brick(COLOR);
@@ -88,6 +98,7 @@ function orange_lego(){
   }
 }
 
+
 function lime_lego(){
   var COLOR = LIME;
   create_brick(COLOR);
@@ -98,6 +109,7 @@ function lime_lego(){
   CAMERA.position.z += 0;
   }
 }
+
 
 //constants
 const {
@@ -274,8 +286,8 @@ function create_brick(brick_color) {
 	BRICK.rotation.z = CONFIG.ROTATION.Z;
 	
 	BRICK.name = "brick" + N.toString()
-
 }
+
 
 // brick removing function
 function removeBrick() {
@@ -300,7 +312,6 @@ const LIGHT_HELPER = new THREE.PointLightHelper(LIGHT);
 
 
 // Set up renderer and scene
- 
 CAMERA.position.z = 80;
 const animate = () => {
   requestAnimationFrame(animate);
@@ -319,9 +330,9 @@ window.addEventListener('resize', () => {
 });
 
 
-
 //Set up dat.GUI to play with different controls
 const CONTROLS = new GUI({ closed: false });
+
 const CAMERA_CONTROLS = CONTROLS.addFolder('CAMERA');
 const fovController = CAMERA_CONTROLS.add(CONFIG, 'FOV', 1, 250);
 fovController.onChange(value => {
@@ -329,6 +340,7 @@ fovController.onChange(value => {
   CAMERA.fov = value;
   CAMERA.updateProjectionMatrix();
 });
+
 const LIGHTS = CONTROLS.addFolder('LIGHT');
 const lightXController = LIGHTS.add(CONFIG.LIGHT, 'X', -40, 40);
 lightXController.onChange(() => {
@@ -342,31 +354,32 @@ const lightZController = LIGHTS.add(CONFIG.LIGHT, 'Z', -100, 100);
 lightZController.onChange(() => {
   LIGHT.position.set(CONFIG.LIGHT.X, CONFIG.LIGHT.Y, CONFIG.LIGHT.Z);
 });
+
 const ROTATION = CONTROLS.addFolder('ROTATION');
+
 const rotationXController = ROTATION.add(
 CONFIG.ROTATION,
 'X',
 0,
 360 * Math.PI / 180);
-
 rotationXController.onChange(() => {
   BRICK.rotation.set(CONFIG.ROTATION.X, CONFIG.ROTATION.Y, CONFIG.ROTATION.Z);
 });
+
 const rotationYController = ROTATION.add(
 CONFIG.ROTATION,
 'Y',
 0,
 360 * Math.PI / 180);
-
 rotationYController.onChange(() => {
   BRICK.rotation.set(CONFIG.ROTATION.X, CONFIG.ROTATION.Y, CONFIG.ROTATION.Z);
 });
+
 const rotationZController = ROTATION.add(
 CONFIG.ROTATION,
 'Z',
 0,
 360 * Math.PI / 180);
-
 rotationZController.onChange(() => {
  BRICK.rotation.set(CONFIG.ROTATION.X, CONFIG.ROTATION.Y, CONFIG.ROTATION.Z);
 });
