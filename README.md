@@ -18,8 +18,8 @@ This is a repository for a small interactive web-browser LEGO project.
 4. Open index.html in your web-browser and enjoy!
 
 ## Development
-The web-project's backend is developed on JavaScript with a ThreeJS framework.
-Frontend is pure HTML and CSS.
+The web-project's backend is developed on JavaScript with a ThreeJS framework.  
+Frontend is pure HTML and CSS.  
 There are some future plans for making it even better.
 
 ## Gameplay
