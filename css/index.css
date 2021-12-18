@@ -69,3 +69,32 @@ img {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+a {
+	text-decoration: none;
+	font-family: papyrus;
+	font-size: 20px;
+	background-color: coral;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* unvisited link */
+a:link {
+  color: #670D0D;
+}
+
+/* visited link */
+a:visited {
+  color: #670D0D;
+}
+
+/* mouse over link */
+a:hover {
+  color: #fe4741;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}

@@ -1,0 +1,25 @@
+p {
+	font-family: papyrus;
+	background-color: #fe4741;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 10px #670D0D dotted;
+	
+}
+
+#inner {
+	padding-top: 200px;
+	padding-bottom: 100px;
+	padding-left: 22%;
+	padding-right: 22%;
+}
+
+body {
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+}
+
+a {
+	margin-left: 20px
+}
+
