@@ -17,6 +17,10 @@ This is a repository for a small interactive web-browser LEGO project.
   - game.html
 4. Open index.html in your web-browser and enjoy!
 
+OR
+
+click a link https://ohsophie.github.io/
+
 ## Development
 The web-project's backend is developed on JavaScript with a ThreeJS framework.  
 Frontend is pure HTML and CSS.  
