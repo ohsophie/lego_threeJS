@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="./css/1.css">
 </head>
 <body>
-
-	<button id="green" onclick="green_lego();"><img src="img/green.png" width="120"></button>
-	<button onclick="yellow_lego();"><img src="img/yellow.png" width="120"></button>
-	<button onclick="red_lego();"><img src="img/red.png" width="120"></button>
-	<button onclick="blue_lego();"><img src="img/blue.png" width="120"></button>
-	<button onclick="cyan_lego();"><img src="img/cyan.png" width="120"></button>
-	<button onclick="rose_lego();"><img src="img/rose.png" width="120"></button>
-	<button onclick="lime_lego();"><img src="img/lime.png" width="120"></button>
-	<button onclick="orange_lego();"><img src="img/orange.png" width="120"></button>
-	<button onclick="removeBrick()" style="padding-top:5px"><img src="img/cross.png" width="80"></button>
-		
+	<div class="dropdown">
+	  <button class="dropbtn" id="change">Hover to choose color<span id="tooltip" class="tooltiptext">Please choose the color first</span></button>
+		  <div class="dropdown-content">
+			  <button onclick="green_lego()" style="background-color:#249508">Green</button>
+			  <button onclick="red_lego()" style="background-color:#F00E11">Red</button>
+			  <button onclick="lime_lego()" style="background-color:#52FF00">Lime</button>
+			  <button onclick="cyan_lego()" style="background-color:#00FFEA">Cyan</button>
+			  <button onclick="yellow_lego()" style="background-color:#F9FD06">Yellow</button>
+			  <button onclick="orange_lego()" style="background-color:#F47D07">Orange</button>
+			  <button onclick="blue_lego()" style="background-color:#1500DB">Blue</button>
+			  <button onclick="rose_lego()" style="background-color:#FF0096">Pink</button>
+		  </div>
+	</div>
+	<div id="rectangle" style="border:solid;width:40px;height:40px;position:absolute;left:280px;top:35px;"></div>
+	<div class="shapes">
+	<button onclick="create_cube_brick()">2x2</button>
+	<button onclick="create_brick()">2x4</button>
+	</div>
+	<button onclick="removeBrick()" style="position:absolute;left:510px;top:21px;border-radius:8px;"><img src="assets/cross.png" width="50" style="padding-top:3px;"></button>
 	<h2>Click any button to add a new lego brick to the scene. Use cross button to delete the last block</h2>
-	
+
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js'></script>
 	<script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
