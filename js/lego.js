@@ -352,6 +352,7 @@ function create_cube_brick() {
 }
 
 
+
 // brick removing function
 function removeBrick() {
     var delObject = SCENE.getObjectByName("brick" + N.toString());
@@ -364,6 +365,14 @@ function removeBrick() {
 	} else {
 	CAMERA.position.z -= 0;
 	}
+}
+
+
+// brick rotating function
+function rotateBrick() {
+    var rotObject = SCENE.getObjectByName("brick" + N.toString());
+	rotObject.rotation.y += Math.PI / 2;
+
 }
 
 
