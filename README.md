@@ -11,7 +11,7 @@ This is a repository for a small interactive web-browser LEGO project.
     - index.css
   - js
     - lego.js
-  - texture
+  - assets
     - [some used pictures]
   - index.html
   - game.html
@@ -27,7 +27,8 @@ Frontend is pure HTML and CSS.
 There are some future plans for making it even better.
 
 ## Gameplay
-Use the buttons to create a new LEGO bricks and continue building your LEGO tower.
+Use the buttons to create a new LEGO brick and continue building your LEGO tower.
+To rotate a brick, click an arrow button.
 Delete bricks by clicking a "cross" button.
 
 ## Contact information
